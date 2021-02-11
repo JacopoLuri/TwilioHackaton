@@ -33,5 +33,14 @@ export const theme = {
     media: {
         phone: "390px",
         tablet: "768px",
-    }
+    },
+    padding: {
+        standard: "8px",
+        double: "16px",
+    },
+    margin: {
+        little: "2px",
+        medium: "4px",
+        standard: "8px",
+    },
 }
