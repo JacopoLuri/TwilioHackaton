@@ -35,11 +35,12 @@ export const theme = {
         tablet: "768px",
     },
     padding: {
+        small: "2px",
         standard: "8px",
         double: "16px",
     },
     margin: {
-        little: "2px",
+        small: "2px",
         medium: "4px",
         standard: "8px",
     },

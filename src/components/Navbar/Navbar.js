@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import { theme } from "../../data/theme";
-import Logo from "../../Images/tavola1.png"
+import Logo from "../../Images/tavola1.png";
 
 const StyledNavBar = styled.div`
     width: 100%;
@@ -40,8 +40,6 @@ const StyledLinkContainer = styled.div`
             &:hover {
                 color: ${theme.color.secondary};
         }
-
-        
     }
   }
 `;

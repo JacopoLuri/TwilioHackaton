@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 import { theme } from "../../data/theme";
 
-export const StyledBurger = styled.button`
+const StyledBurger = styled.button`
   position: absolute;
   top: 2rem;
   right: 2rem;

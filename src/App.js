@@ -2,7 +2,7 @@ import React, {useContext, useState} from 'react'
 import {Switch, Route} from 'react-router-dom'
 import {Context} from './context/Context'
 import Home from './components/pages/Home'
-import Contact from './components/pages/Contact'
+import Babysitter from './components/pages/Babysitter'
 
 // Burger Menu and Navbar
 import NavBar from "./components/Navbar/Navbar"
@@ -20,7 +20,7 @@ const App = () => {
       <Menu modalOpen={modalOpen} setModalOpen={setModalOpen} />
       <Switch>
         <Route exact path="/" render={() => <Home />} />
-        <Route path="/babysitter" render={() => <Contact />} />
+        <Route path="/babysitter" render={() => <Babysitter />} />
       </Switch>
     </>
   )
