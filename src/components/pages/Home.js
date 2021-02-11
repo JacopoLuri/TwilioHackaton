@@ -10,6 +10,9 @@ import Girls from "../../Images/babysitter.jpg";
 import Card from "../Carousel/Card";
 import CircleButton from "../Carousel/CircleButton";
 
+//Footer
+import Footer from "../Footer/Footer"
+
 
 
 
@@ -168,6 +171,7 @@ const Home = () => {
                     <CircleButton action={firstImageToggle} actionTwo={secondImageToggle} actionThree={thirdImageToggle} isActive={carouselImage} />
                 </div>
             </StyledReviewsContainer>
+            <Footer />
 
         </>
     )
