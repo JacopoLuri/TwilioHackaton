@@ -1,4 +1,3 @@
-  
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
@@ -7,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   outline: none;
-  font-family: Inter, sans-serif;
+  font-family: Poppins, sans-serif;
 }
 &::-webkit-scrollbar{
   display:none
