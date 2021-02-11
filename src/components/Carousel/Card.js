@@ -15,6 +15,7 @@ import { BsStar } from "react-icons/bs";
 
 const StyledCard = styled.div`
     width: 100%;
+    height: 330px;
     border-radius: ${theme.borderRadius.small};
     display: flex;
     flex-direction: column;
@@ -63,7 +64,7 @@ const Card = ({ imageNumber }) => {
             {
                 imageNumber === 0
                     ? (<>
-                            <img src={firstPortrait} alt="Reviewer picture" />
+                            <img src={firstPortrait} alt="Reviewer" />
                             <h2>Angelina J.</h2>
                             <p>"Amazing service, my babysitter is an incredible person, my kids love her so much and she also teach them french!"</p>
                             <div>
@@ -76,7 +77,7 @@ const Card = ({ imageNumber }) => {
                         </>)
                     : imageNumber === 1
                         ? (<>
-                            <img src={secondPortrait} alt="Reviewer picture number 2" />
+                            <img src={secondPortrait} alt="Reviewer number 2" />
                             <h2>Anna M.</h2>
                             <p>"This service saves my life, I was about to quit my job, recommended to every parent in need of a qualified babysitter."</p>
                             <div>
@@ -88,7 +89,7 @@ const Card = ({ imageNumber }) => {
                             </div>
                         </>)
                         : (<>
-                            <img src={thirdPortrait} alt="Reviewer picture umber 3" />
+                            <img src={thirdPortrait} alt="Reviewer umber 3" />
                             <h2>Stephen K.</h2>
                             <p>"Good Job! Good service! My babysitter is really patient and very funny! Recommended!"</p>
                             <div>
