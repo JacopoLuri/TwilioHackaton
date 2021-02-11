@@ -10,6 +10,12 @@ import Girls from "../../Images/babysitter.jpg";
 import Card from "../Carousel/Card";
 import CircleButton from "../Carousel/CircleButton";
 
+//Footer
+import Footer from "../Footer/Footer"
+
+
+
+
 const StyledLinkContainer = styled.div`
     width: 100%;
     background-color: ${theme.color.primary};
@@ -158,6 +164,8 @@ const Home = () => {
                     <CircleButton action={firstImageToggle} actionTwo={secondImageToggle} actionThree={thirdImageToggle} isActive={carouselImage} />
                 </div>
             </StyledReviewsContainer>
+            <Footer />
+
         </>
     )
 }
