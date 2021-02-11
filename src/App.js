@@ -1,23 +1,28 @@
-import React, {useContext, useEffect} from 'react'
+import React, {useContext, useState} from 'react'
 import {Switch, Route} from 'react-router-dom'
 import {Context} from './context/Context'
-import Navbar from './components/pages/Navbar'
 import Home from './components/pages/Home'
 import Contact from './components/pages/Contact'
 
+// Burger Menu and Navbar
+import NavBar from "./components/Navbar/Navbar"
+import Burger from "./components/Navbar/Burger";
+import Menu from "./components/Navbar/Menu";
+
 const App = () => {
   const context = useContext(Context)
-
-  useEffect(()=>{console.log("placeholder")},[])
+  const [modalOpen, setModalOpen] = useState(false);
 
   return(
-    <main>
-      <Navbar/>
+    <>
+      <NavBar />
+      <Burger modalOpen={modalOpen} setModalOpen={setModalOpen} />
+      <Menu modalOpen={modalOpen} setModalOpen={setModalOpen} />
       <Switch>
         <Route exact path="/" render={() => <Home />} />
-        <Route path="/contact" render={() => <Contact />} />
+        <Route path="/babysitter" render={() => <Contact />} />
       </Switch>
-    </main>
+    </>
   )
 }
 
