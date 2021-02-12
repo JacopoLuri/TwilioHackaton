@@ -14,11 +14,6 @@ import screenshot4 from "../../Images/instructions4.jpeg";
 import Card from "../Carousel/Card";
 import CircleButton from "../Carousel/CircleButton";
 
-
-
-
-
-
 const StyledLinkContainer = styled.div`
     width: 100%;
     background-color: ${theme.color.primary};

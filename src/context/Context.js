@@ -8,7 +8,6 @@ const Provider = ({ children }) => {
   };
 
   const [dataFromBE, setDataFromBe] = useState({})
-  
 
   return (
     <Context.Provider
