@@ -64,7 +64,8 @@ const StyledTopSection = styled.div`
 const StyledFormContainer = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
+    gap: ${theme.padding.double};
     width: 100%;
     max-width: ${theme.media.phone};
     padding: ${theme.padding.standard};
@@ -116,6 +117,12 @@ const StyledFormContainer = styled.div`
         }
 `;
 
+const StyledForm = styled.form`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+`;
+
 const StyledFormSection = styled.div`
     width: 100%;
     display: flex;
@@ -132,7 +139,7 @@ const Babysitter = () => {
     const [gender, setGender] = useState("");
     const [age, setAge] = useState(0);
     const [email, setEmail] = useState("");
-    const [phone, setPhone] = useState(0);
+    const [phone, setPhone] = useState("");
     const [city, setCity] = useState("");
     const [street, setStreet] = useState("");
     const [postcode, setPostcode] = useState("");
@@ -146,7 +153,7 @@ const Babysitter = () => {
     const handleGender = (e) => setGender(e.target.value);
     const handleAge = (e) => setAge(e.target.value);
     const handleEmail = (e) => setEmail(e.target.value);
-    const handlePhone = (e) => setPhone(e.target.value);
+    const handlePhone = (e) => parseInt(setPhone(e.target.value));
     const handleCity = (e) => setCity(e.target.value);
     const handleStreet = (e) => setStreet(e.target.value);
     const handlePostcode = (e) => setPostcode(e.target.value);
@@ -156,14 +163,14 @@ const Babysitter = () => {
     const handleSocialMedia = (e) => setSocialMedia(e.target.value);
 
     const getBabysitters = () => (
-        fetch('http://localhost:8000/babysitters')
+        fetch('https://radiant-badlands-42962.herokuapp.com/babysitters')
             .then(response => response.json())
             .then(data => data)
     )
 
     const handleForm = (event) => {
         event.preventDefault();
-        fetch('http://localhost:8000/babysitters', {
+        fetch('https://radiant-badlands-42962.herokuapp.com/babysitters', {
             method: 'POST',
             headers: new Headers({
                 'Content-Type': 'application/json'
@@ -190,28 +197,7 @@ const Babysitter = () => {
         })
             .then(response => {
                 if (response.status === 201) {
-                    getBabysitters().then(data => console.log(data)
-                        // context.setDataFromBE({
-                        //     data,
-                        //     name: {
-                        //         first: "",
-                        //         last: ""
-                        //     },
-                        //     phoneNumber: "",
-                        //     email: "",
-                        //     address: {
-                        //         street: "",
-                        //         number: "",
-                        //         city: "",
-                        //         postCode: ""
-                        //     },
-                        //     socialMediaLink: "",
-                        //     dateOfAvailability: "",
-                        //     gender: "",
-                        //     age: "",
-                        //     skills: ""
-                        // })
-                    )
+                    getBabysitters().then(data => console.log(data))
                 }
             })
     }
@@ -225,7 +211,7 @@ const Babysitter = () => {
                     <p>Do you want to be enlisted as a babysitter, hundreds of parents need your help!!</p>
                 </div>
             </StyledTopSection>
-            <form onSubmit={handleForm}>
+            <StyledForm onSubmit={handleForm}>
                 <StyledFormContainer>
                     <h2>Send your contacts to be enlisted in our team:</h2>
                     <div>
@@ -257,7 +243,7 @@ const Babysitter = () => {
                     </div>
                     <div>
                         <label for="phoneNumber">Telephone</label>
-                        <input onChange={(e) => handlePhone(e)} type="number" id="phoneNumber" required />
+                        <input onChange={(e) => handlePhone(e)} type="text" id="phoneNumber" required />
                     </div>
                     <div>
                         <label for="city">City</label>
@@ -291,7 +277,7 @@ const Babysitter = () => {
                     </div>
                     <button>Add</button>
                 </StyledFormContainer>
-            </form>
+            </StyledForm>
         </>
     )
 }
