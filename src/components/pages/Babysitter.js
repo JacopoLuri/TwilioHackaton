@@ -1,7 +1,6 @@
-import { React, useState, useContext } from "react";
+import { React, useState} from "react";
 import styled from 'styled-components';
 import { theme } from "../../data/theme";
-import { Context } from '../../context/Context';
 import MainImg from "../../Images/tavola1.png";
 
 const StyledTopSection = styled.div`
@@ -131,8 +130,7 @@ const StyledFormSection = styled.div`
 `;
 
 const Babysitter = () => {
-    const context = useContext(Context)
-
+    
 // hooks & functions for form
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");

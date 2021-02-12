@@ -1,7 +1,7 @@
-import { React, useContext, useState } from "react";
+import React from "react";
 import { theme } from "../../data/theme";
 import styled from 'styled-components';
-import { Context } from "../../context/Context";
+
 
 //  images
 import firstPortrait from "../../Images/customer1.png";
@@ -57,7 +57,7 @@ const StyledCard = styled.div`
 `;
 
 const Card = ({ imageNumber }) => {
-    const context = useContext(Context);
+  
 
     return (
         <StyledCard>

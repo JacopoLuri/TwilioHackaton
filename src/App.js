@@ -1,6 +1,5 @@
-import React, { useContext, useState } from 'react'
+import React, { useState } from 'react'
 import { Switch, Route } from 'react-router-dom'
-import { Context } from './context/Context'
 import styled from 'styled-components';
 
 import Home from './components/pages/Home'
@@ -20,7 +19,6 @@ const StyledNavBarContainer = styled.div`
 `;
 
 const App = () => {
-  const context = useContext(Context)
   const [modalOpen, setModalOpen] = useState(false);
 
   return (

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 export const Context = React.createContext();
 
@@ -7,14 +7,14 @@ const Provider = ({ children }) => {
     window.scrollTo(0, 0);
   };
 
-  const [dataFromBE, setDataFromBe] = useState({})
-  
+  // const [dataFromBE, setDataFromBe] = useState({})
 
   return (
     <Context.Provider
       value={{
         scrollTop,
-        setDataFromBe
+        // setDataFromBe,
+        // dataFromBE
       }}
     >
       {children}

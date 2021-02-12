@@ -4,9 +4,9 @@ import { theme } from "../../data/theme";
 
 //icons 
 
-import {SiInstagram} from "react-icons/si";
-import {AiOutlineFacebook} from "react-icons/ai";
-import {FiTwitter} from "react-icons/fi";
+import { SiInstagram } from "react-icons/si";
+import { AiOutlineFacebook } from "react-icons/ai";
+import { FiTwitter } from "react-icons/fi";
 
 const StyledFooter = styled.div`
  width: 100%;
@@ -18,7 +18,6 @@ const StyledFooter = styled.div`
     justify-content:space-around;           
     gap: ${theme.padding.double};
     
-
     svg {
         color: ${theme.color.tertiary};
         width: 50px;
@@ -38,20 +37,11 @@ const StyledFooter = styled.div`
 
 `;
 
-
-
- 
-
-
-
-
-
-
 const Footer = () => (
-    <StyledFooter>  
-   <SiInstagram />
-   <AiOutlineFacebook />
-   <FiTwitter/>
+    <StyledFooter>
+        <SiInstagram />
+        <AiOutlineFacebook />
+        <FiTwitter />
     </StyledFooter>
 )
 
