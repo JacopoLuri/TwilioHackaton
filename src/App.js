@@ -11,6 +11,9 @@ import NavBar from "./components/Navbar/Navbar"
 import Burger from "./components/Navbar/Burger";
 import Menu from "./components/Navbar/Menu";
 
+//footer 
+import Footer from "./components/Footer/Footer"
+
 const StyledNavBarContainer = styled.div`
   position: sticky;
   top: 0;
@@ -31,6 +34,7 @@ const App = () => {
         <Route exact path="/" render={() => <Home />} />
         <Route path="/babysitter" render={() => <Babysitter />} />
       </Switch>
+      <Footer />
     </>
   )
 }
