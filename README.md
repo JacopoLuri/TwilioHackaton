@@ -25,13 +25,13 @@ Front-End repository of our group's submission for the Remote EU 2020 Wild Code 
 
 ### Back-End Members:
 
-(Separate repository: https://github.com/aCastilloNL/TwilioHackathonBE)
-
-(Deployed Back-end: https://radiant-badlands-42962.herokuapp.com/babysitters)
-
 - Victoria Kulinkovich https://github.com/KulinkovichVA
 - Dima Piskun https://github.com/DzmitryPS
 - Alfred Castillo https://github.com/aCastilloNL
+
+(Separate repository: https://github.com/aCastilloNL/TwilioHackathonBE)
+
+(Deployed Back-end: https://radiant-badlands-42962.herokuapp.com/babysitters)
 
 > WebApp made in 48 hours
 
