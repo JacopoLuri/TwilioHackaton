@@ -21,10 +21,12 @@ Front-End repository of our group's submission for the Remote EU 2020 Wild Code 
 - Jeanloup Cayuela https://github.com/j-loup30400
 - Niko Phalen https://github.com/nphalen29
 
+(Deployed Front-end: https://lucid-feynman-60c600.netlify.app/)
+
 ### Back-End Members:
 
 (Separate repository: https://github.com/aCastilloNL/TwilioHackathonBE)
-(Deplyed Back-end: https://radiant-badlands-42962.herokuapp.com/babysitters)
+(Deployed Back-end: https://radiant-badlands-42962.herokuapp.com/babysitters)
 
 - Victoria Kulinkovich https://github.com/KulinkovichVA
 - Dima Piskun https://github.com/DzmitryPS
