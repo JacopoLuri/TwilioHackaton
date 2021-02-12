@@ -13,7 +13,8 @@ const Provider = ({ children }) => {
     <Context.Provider
       value={{
         scrollTop,
-        setDataFromBe
+        setDataFromBe,
+        dataFromBE
       }}
     >
       {children}

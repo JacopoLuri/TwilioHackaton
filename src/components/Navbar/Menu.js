@@ -42,15 +42,15 @@ const StyledModal = styled.div`
 `;
 
 const Menu = ({ modalOpen, setModalOpen }) => {
-  const context = useContext(Context);
+  const context = useContext(Context)
   return (
     <StyledModal modalOpen={modalOpen}>
       {modalOpen && (
         <>
-          <Link onClick={() => (context.scrollTop, setModalOpen(!modalOpen))} to="/">
+          <Link onClick={() => ((context.scrollTop, setModalOpen(!modalOpen)))} to="/">
             Home
           </Link>
-          <Link onClick={() => (context.scrollTop, setModalOpen(!modalOpen))} to="/babysitter">
+          <Link onClick={() => ((context.scrollTop, setModalOpen(!modalOpen)))} to="/babysitter">
             Babysitter
           </Link>
         </>
@@ -59,4 +59,4 @@ const Menu = ({ modalOpen, setModalOpen }) => {
   )
 }
 
-export default Menu;
+export default Menu
