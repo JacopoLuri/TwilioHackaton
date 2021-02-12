@@ -131,7 +131,6 @@ const StyledFormSection = styled.div`
 
 const Babysitter = () => {
     
-
 // hooks & functions for form
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
