@@ -8,7 +8,7 @@ Front-End repository of our group's submission for the Remote EU 2020 Wild Code 
 
 ![Javascript](https://aleen42.github.io/badges/src/javascript.svg)
 ![Twilio](https://img.shields.io/badge/API-twilio-red)
-![React](https://img.shields.io/badge/React-blue)
+![React](https://img.shields.io/badge/JS-React-blue)
 ![React-Router-Map](https://img.shields.io/badge/JS-Router%20Router%20Dom-green)
 ![React-Icons](https://img.shields.io/badge/JS-React%20Icons-Purple)
 ![Styled-Components](https://img.shields.io/badge/CSS-Styled%20Components-Pink)
