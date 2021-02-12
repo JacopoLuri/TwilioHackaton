@@ -8,10 +8,10 @@ Front-End repository of our group's submission for the Remote EU 2020 Wild Code 
 
 ![Javascript](https://aleen42.github.io/badges/src/javascript.svg)
 ![Twilio](https://img.shields.io/badge/API-twilio-red)
-![OpenStreetMap](https://img.shields.io/badge/map-OpenStreetMap-green)
 ![React](https://img.shields.io/badge/React-blue)
-![React-Router-Map](https://img.shields.io/badge/React-Router-Map)
-![Function-Approach-Only](https://img.shields.io/badge/funcional-approach-only)
+![React-Router-Map](https://img.shields.io/badge/JS-Router%20Router%20Dom-green)
+![React-Icons](https://img.shields.io/badge/JS-React%20Icons-Purple)
+![Styled-Components](https://img.shields.io/badge/CSS-Styled%20Components-Pink)
 
 ## Made by Wilders
 
@@ -39,7 +39,6 @@ Front-End repository of our group's submission for the Remote EU 2020 Wild Code 
 ```
 $ npm install
 $ npm start
-
 ```
 
 ## List of Contents
@@ -61,6 +60,8 @@ Using React, React-router-DOM, React-Icons, Functional Approach Only, Hooks, Con
 ## La Nurserie
 
 La Nurserie
+
+You need to go to work? Don't know what to do with your kids? Send a WhatsApp to La Nurserie! We have the solution!
 
 ## Wireframes, Packages and Softwares used
 
