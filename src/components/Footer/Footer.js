@@ -21,10 +21,20 @@ const StyledFooter = styled.div`
 
     svg {
         color: ${theme.color.tertiary};
-        width: 10%;
-        height: 10%;
+        width: 50px;
+        height: 50px;
         margin: ${theme.margin.standard};
     }
+
+
+    
+
+
+
+
+
+
+
 
 `;
 
@@ -43,10 +53,6 @@ const Footer = () => (
    <AiOutlineFacebook />
    <FiTwitter/>
     </StyledFooter>
-
-
-
-
 )
 
 
