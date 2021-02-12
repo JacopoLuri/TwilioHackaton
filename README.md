@@ -24,6 +24,7 @@ Front-End repository of our group's submission for the Remote EU 2020 Wild Code 
 ### Back-End Members:
 
 (Separate repository: https://github.com/aCastilloNL/TwilioHackathonBE)
+(Deplyed Back-end: https://radiant-badlands-42962.herokuapp.com/babysitters)
 
 - Victoria Kulinkovich https://github.com/KulinkovichVA
 - Dima Piskun https://github.com/DzmitryPS
@@ -35,8 +36,7 @@ Front-End repository of our group's submission for the Remote EU 2020 Wild Code 
 
 ```
 $ npm install
-$ cp .env.example .env
-$ # set values in .env file
+$ npm start
 
 ```
 
@@ -72,3 +72,7 @@ La Nurserie
 - Figma
 
 ## Documentation
+
+Miro conceptual map: https://miro.com/welcomeonboard/EQkTa05Q8yHjWVmLKVydeElLFNPaHjR0ecczK5N1hogFTskwhWpqfRnaPvWxAd3J
+
+Miro workflow map: https://miro.com/app/board/o9J_lU-0zKI=/
