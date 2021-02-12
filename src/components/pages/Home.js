@@ -130,11 +130,11 @@ const StyledReviewsContainer = styled.div`
 
 const Home = () => {
     const [carouselImage, setCarouselImage] = useState(0);
-    const carouselImageToggle = () => {
-        carouselImage === 2
-            ? setCarouselImage(0)
-            : setCarouselImage(carouselImage + 1)
-    };
+    // const carouselImageToggle = () => {
+    //     carouselImage === 2
+    //         ? setCarouselImage(0)
+    //         : setCarouselImage(carouselImage + 1)
+    // };
     const firstImageToggle = () => setCarouselImage(0);
     const secondImageToggle = () => setCarouselImage(1);
     const thirdImageToggle = () => setCarouselImage(2);
