@@ -25,56 +25,56 @@ const StyledLinkContainer = styled.div`
     align-items: center;
     gap: ${theme.padding.double};
     color: ${theme.color.light};
+
     div {
         display: flex;
         flex-direction: column;
         gap: ${theme.padding.standard};
         max-width: ${theme.media.phone};
     }
+
     img {
         width: 100%;
         padding-bottom: ${theme.padding.double};
     }
+
     h1 {
         font-size: ${theme.fontSize.large};
         font-weight: ${theme.fontWeight.bold};
         line-height: ${theme.lineHeight.large};
         text-align: center;
     }
+
     p {
         font-size: ${theme.fontSize.medium};
         line-height: ${theme.lineHeight.medium};
         text-align: center;
     }
+
     @media (min-width: ${theme.media.phone}) {
         img {
             max-height: ${theme.media.phone};
         }
     }
+
     @media (min-width: ${theme.media.tablet}) {
-        /* flex-direction: row; */
-        /* justify-content: center; */
-      
-    
         div {
             justify-content: center;
             gap: ${theme.padding.double};
             max-width: ${theme.media.phone};
         }
+
         img {
             max-width: ${theme.media.tablet};
         }
     }`;
 
 const StyledServiceContainer = styled.div`
-
-width: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: ${theme.padding.double};
-
-
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: ${theme.padding.double};
 
     h2 {
         font-size: ${theme.fontSize.medium};
@@ -96,7 +96,6 @@ gap: ${theme.padding.double};
         text-align: center;
     }
   
-
     img {
         width : 50%;
     }
@@ -106,15 +105,12 @@ gap: ${theme.padding.double};
             max-width: ${theme.media.phone};
         }
   } 
-
-
-
  `;
 
 const StyledInstructionContainer = styled.div`
-width:100%;
-height: 300px;
-background-color: ${theme.color.primary};
+    width:100%;
+    height: 300px;
+    background-color: ${theme.color.primary};
 `;
 
 const StyledReviewsContainer = styled.div`
@@ -132,9 +128,6 @@ const StyledReviewsContainer = styled.div`
         justify-content: center;
     }  
 `;
-
-
-
 
 const Home = () => {
     const [carouselImage, setCarouselImage] = useState(0);

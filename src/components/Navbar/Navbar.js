@@ -59,8 +59,6 @@ const Navbar = () => {
                     BABYSITTER
                 </Link>
             </StyledLinkContainer>
-
-
         </StyledNavBar>
     )
 }
