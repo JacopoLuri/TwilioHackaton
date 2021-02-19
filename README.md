@@ -21,7 +21,7 @@ Front-End repository of our group's submission for the Remote EU 2020 Wild Code 
 - Jeanloup Cayuela https://github.com/j-loup30400
 - Niko Phalen https://github.com/nphalen29
 
-(Deployed Front-end: https://lucid-feynman-60c600.netlify.app/)
+(Deployed Front-end: https://vigorous-hugle-6c7e1e.netlify.app/)
 
 ### Back-End Members:
 
